@@ -144,8 +144,8 @@ def list_cmd(api, args):
             torrent["save_path"],
         )
 
-        if args.location:
-            api.set_location(torrent['hash'], args.location)
+        if args.savepath:
+            api.set_location(torrent['hash'], args.savepath)
             print("MOVED: {}".format(torrent["name"]))
 
         if args.pause:
