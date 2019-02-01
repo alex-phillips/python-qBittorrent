@@ -85,7 +85,7 @@ Commands
 
     def prefs(self):
         parser = argparse.ArgumentParser(
-            usage="qb prefs [<args>]", description="Get and set qBittorrent preferences"
+            usage="qb prefs <preference> [value] [<args>]", description="Get and set qBittorrent preferences"
         )
         parser.add_argument("preference", nargs="*", help="preference to get or set")
         parser = self.add_global_opts(parser)
